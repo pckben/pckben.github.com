@@ -1,3 +1,0 @@
-<blahtex>
-<error><id>UnrecognisedCommand</id><arg>\begin{equation}</arg><message>Unrecognised command "\begin{equation}"</message></error>
-</blahtex>
