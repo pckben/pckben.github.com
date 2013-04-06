@@ -1,3 +1,1 @@
-# Hello, World!
-
-Welcome to my blog
+Live blog is here [pckben.github.com](http://pckben.github.com)

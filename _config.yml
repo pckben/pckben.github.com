@@ -5,4 +5,10 @@ exclude: ["README.md"]
 auto: true
 
 pygments: true
-markdown: rdiscount
+markdown: maruku
+
+maruku:
+  use_tex: true
+  png_engine: blahtex
+  png_dir: images/latex/
+  png_url: /images/latex/
