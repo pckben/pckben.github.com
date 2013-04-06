@@ -37,3 +37,5 @@ clean, www-less domain, but also prevent various [potential
 problems](https://devcenter.heroku.com/articles/avoiding-naked-domains-dns-arecords)
 associated with using a naked domain, if it is configured as redirecting to its
 www subdomain using free services such as [wwwizer.com](http://wwwizer.com/).
+The details on configuring Amazon S3 and Route 53 is
+[here](http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html).
