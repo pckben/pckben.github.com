@@ -31,7 +31,7 @@ gonna need more than a GB storage, so it's about $1/year hosting!
 ## 3. Amazon Route 53 to allow naked domain
 
 [Amazon Route 53](http://aws.amazon.com/route53/) recently lets naked domains
-(such as [my24.me](http://my24.me)) to be served from a AWE S3 bucket. This is
+(such as [my24.me](http://my24.me)) to be served from an Amazon S3 bucket. This is
 an amazing feature as it not only allow your website to be advertised with a
 clean, www-less domain, but also prevent various [potential
 problems](https://devcenter.heroku.com/articles/avoiding-naked-domains-dns-arecords)
