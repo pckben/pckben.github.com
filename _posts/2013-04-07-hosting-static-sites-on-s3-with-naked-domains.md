@@ -39,3 +39,24 @@ associated with using a naked domain, if it is configured as redirecting to its
 www subdomain using free services such as [wwwizer.com](http://wwwizer.com/).
 The details on configuring Amazon S3 and Route 53 is
 [here](http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html).
+
+## 4. Deploying with `s3cmd`
+
+Using git and the [`s3cmd`
+tool](/2013/04/07/mac-osx-uploading-files-to-amazon-s3/), we can have out
+website developed in a private git repository, such as
+[BitBucket](https://bitbucket.org/), and then pushes the production branch to
+Amazon S3 automatically. Below is the command to sync your local production
+directory with an S3 bucket. You can also set up a git hook to sync this
+directory automatically for continuous deployment.
+
+{% highlight bash %}
+s3cmd sync \
+  --recursive \
+  --acl-public \
+  --exclude '.git*/*' \
+  --exclude '*.swp' \
+  --exclude 'Makefile' \
+  /path/to/local/dir \
+  s3://path/to/remote/bucket
+{% endhighlight %}
